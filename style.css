@@ -1,0 +1,589 @@
+/*
+
+
+	Designed by James Corley - james.corley@mga.edu
+	
+	Color Codes:		
+	Black			: #000000
+	White			: #FFFFFF
+	Orange			: #ff6600
+	Darker Orange	: #cc5200
+	Comp Blue 		: #0099ff
+	Darker Blue		: #0164a5
+	PurpleBlue		: #6600FF
+	Red				: #FF0019
+	
+	Off-white		: #F5F5F5
+	
+	
+
+*/
+
+/* Global */
+
+
+body {
+	
+
+	background-color: #f2f2f2;
+
+}
+
+
+#myBody {max-width: 1400px; margin: 0 auto;}
+
+#main {
+	min-height: 572px;
+}
+
+
+h3 {
+	color: #6600FF;
+	padding-bottom: 5px;
+
+	margin: 0 auto;
+	
+}
+
+
+h4 {
+	
+}
+
+
+
+ a {
+	color: #0099ff; 
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+a:visited {
+ color: #0164a5;
+}
+
+a:hover {
+color: #6600FF;
+}
+
+a:active {
+ color: #0164a5;
+}
+
+
+/* Header */
+
+header {margin: 0; padding: 0;}
+header h1 {display: none;}
+
+.ctfaLogo img {
+	max-width: 100%;
+
+	max-height: 151px;
+}
+
+.myLogo {
+	float: left;
+	padding: 5px 20px 5px 5px;
+}
+
+.myLogo a:hover {
+	text-decoration:none;
+	
+}
+
+.headertext {
+	
+padding-left: 40px;
+   font-weight: bold; 
+   font-style: normal; 
+}
+
+.mainblue {color: #0099ff;
+
+
+}
+
+
+.mainblue a:visited {
+  color: #0099ff;
+}
+
+.mainblue a:link {
+  color: #0099ff;
+}
+
+.mainblue a:visited {
+color: #0099ff;
+}
+
+.mainblue a:hover {
+color: #6600FF;
+text-decoration: none;
+}
+
+.mainblue a:active {
+color: #0099ff;
+}
+
+.mainorange {color: #ff6600;
+font-weight: bold;
+	}
+
+.mainorange a:visited {
+  color: #ff6600;
+}
+
+.mainorange a:link {
+  color: #ff6600;
+}
+
+.mainorange a:visited {
+color: #ff6600;
+}
+
+.mainorange a:hover {
+color: #6600FF;
+text-decoration: none;
+}
+
+.mainorange a:active {
+color: #ff6600;
+}
+
+.headerDash {color: #595959;
+font-weight: bold;
+display: none;
+	}
+
+.break {
+	display: inline;
+}
+
+.floatText {
+	text-align: center;
+float: left;
+
+}
+
+	.ctfaLogoHome img {
+	
+	
+	
+	max-width: 100%;
+    max-height: 90px;
+	
+}
+
+.homeHeader {
+	
+	text-align: center;
+	
+}
+
+/* Nav */
+
+#myNav {background-color: #6600FF;  font-weight: bold; text-transform: uppercase; color: #FFFFFF; padding: 0px;
+margin-bottom: 15px; font-size: large;
+}
+
+.nav-link {color: #E6E6E6 !important;}
+
+.nav-link:hover {color: #F2F2F2 !important; }
+
+.nav-item:hover { background-color: #ff6600;}
+
+.nav-item {padding: 5px 3px 5px 3px;}
+
+.homepageSize {
+	font-size: 25px;
+}
+
+
+
+
+
+/* Sidebar Column */
+
+.contents {
+	text-align: center;
+	
+	
+}
+
+.contents.list-group-item {
+	background-color: #ff6600;
+	
+	
+	
+	color: #F5F5F5;
+	
+	font-weight: bold;
+	
+	font-size: large;
+	
+
+}
+
+.list-group-flush a {
+
+	color: #000000;
+	
+}
+
+
+.lvl2.list-group-item-action {
+	padding-left: 30px;
+}
+
+
+.list-group-flush a:visited {
+
+	
+	color: #000000;
+	
+}
+
+.list-group-flush a:active {
+
+	
+	color: #0099ff;
+	
+}
+
+
+/* Breadcrumb */
+
+.breadcrumb>.active {
+	color: #ff6600;
+}
+
+.breadcrumb-item a {
+	color: #ff6600 ;
+}
+
+.breadcrumb-item a:hover {
+	color: #6600FF ;
+	text-decoration: none;
+}
+
+
+.breadcrumb {
+	color: #ff6600;
+	background-color: #FFFFFF;
+	
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+
+
+/* footer */
+.threeColumns {
+
+	background-color: #0099ff;
+	
+	background: linear-gradient(#4db8ff, #0099ff);
+	
+	text-align: center;
+}
+
+
+.socialButtons a {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.threeColumns a {
+	color: #FFFFFF; 
+	text-decoration: none;
+	font-weight: bold;
+	
+	
+}
+
+
+.threeColumns a:visited {
+ color: #FFFFFF;
+ 
+}
+
+.threeColumns a:hover {
+color: #F5F5F5;
+}
+
+.threeColumns a:active {
+ color: #0164a5;
+}
+
+
+.infoLinks a {
+
+	display: block;
+	
+	border-bottom: 1px dotted #f2f2f2;
+	
+	padding: 5px 0 5px 0;
+	
+	text-transform: uppercase;
+	
+}
+
+.infoLinks a:last-child {
+	border: none;
+} 
+
+
+.infoLinks a:hover {
+	
+	background-color: rgb(255, 255, 255, 0.1);
+	color: #FFFFFF;
+	
+	
+}
+
+
+.termsPolicy {
+	
+	float: right;
+	
+	padding-right: 20px;
+}
+
+.footer-copyright {
+	width: 100%;
+	
+	padding-left: 20px;
+	
+	font-weight: bold;
+	
+	
+}
+
+
+/* Form Styles */
+.btn-mybutton:hover {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	
+	color: #FFFFFF;
+	background-color: #33adff;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, background-color;
+    transition-property: box-shadow, background-color;
+	
+}
+
+.mySignInBox {
+		max-width: 400px;
+		
+		margin: 0 auto;
+		
+		background-color: #FFFFFF;
+		}
+
+.mySignIn {
+	background-color: #ff6600;
+	
+	color: #F5F5F5;
+	
+	font-weight: bold;
+	
+	font-size: large;
+}
+
+.btn-mybutton {background-color: #0099ff;  color: #FFFFFF;}
+
+
+.valid-input {
+	width: 100%;
+    margin-top: .25rem;
+    font-size: 95%;
+    color: #28a745;
+}
+
+
+.form-control {
+	transition-duration: 1.0s;
+}
+
+.mySignInFields {
+	text-align: left;
+	
+}
+
+.submit {
+	transition-duration: 1.0s;
+	
+}
+
+.exampleForm span {
+	color: #28a745;
+	
+}
+
+.exampleForm .form-control {
+border-color: #28a745;
+}
+
+.exampleForm .btn {
+	
+	background-color: #28a745;
+}
+
+/* Classes and Ids */
+
+.myLightBox {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}
+
+.loginFlag {
+	margin: 0 auto;
+	max-width: 400px;
+	width: 100%;
+
+	text-align: center;
+	
+	background-color: #28a745;
+	
+	color: #FFFFFF;
+	
+	font-weight: bold;
+	
+	font-size: 1.5rem;
+}
+
+.cenimg {width: 70%; margin: 0 auto; }
+
+
+.floatMiddle {margin: 0 auto;
+text-align: center;
+}
+
+
+.clear {
+	float: none;
+}
+
+.screenshot {
+	width: 95%;
+	margin: 0 auto;
+	
+	border-style: solid;
+  border-width: 2px;
+  border-color: #6600FF;
+	
+	
+}
+
+.screenshot img {
+	width: 100%;
+	
+	
+}
+
+.otherPic {
+	width: 65%;
+	margin: 0 auto;
+	
+	border-style: solid;
+  border-width: 2px;
+  border-color: #6600FF;
+	
+	
+}
+
+.otherPic img {
+	width: 100%;
+	
+	
+}
+
+
+.myVideo {width: 85%; margin: 0 auto;}
+
+.Email {
+	background-color: #FFFFFF;
+	
+	max-width: 566px;
+	
+	margin: 0 auto;
+}
+
+.emailInfo {
+	background-color: #F5F5F5;
+}
+
+.emailInfo p {
+	border-bottom: 1px solid #000000;
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+thead {background-color: #ff6600; color: #FFFFFF;}
+
+
+/* HTML Example Colors */
+
+.htmlExample {background-color: #FFFFFF; border-left: 4px solid #0099ff;}
+
+.htmlExample p {margin-bottom: 0;}
+
+.tag {color: #2f6f9f;
+color: red;
+}
+
+	.tagname {color: #4f9fcf;}
+
+.htmlColor {color: #4f9fcf;}
+
+
+.htmllvl1 {padding-left: 25px;}
+
+.htmllvl2 {padding-left: 45px;}
+
+.htmllvl3 {padding-left: 65px;}
+
+
+/* Media queries */
+
+@media only screen and (min-width: 1156px) {
+	
+	
+	.ctfaLogo img {
+	
+	
+	
+	max-width: 100%;
+    max-height: 90px;
+	
+}
+	
+.break {
+	display: none;
+}
+
+.headerDash {display: inline;}
+
+	
+	
+}
+
+
+.floatText {
+
+padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 822px) {
+
+.myLogo {display: none;}
+
+.floatText {float: none;}
+
+.myVideo{width: 95%;}
+}

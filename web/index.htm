@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>CTF Academy : Web Application Exploitation</title>
+			<meta name="description" content="Web pages, just like the one you are reading now, are generally made of three components, HTML, CSS, and JavaScript. Each of these components have a different role in providing the functions and format of a webpage. The structure of a webpage can be compared to a human body: the HTML is the bone structure, CSS being the appearance, and JavaScript being the muscles.">
+			
+			<meta name="author" content="CTF Academy">			
+			<link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet">	
+				<!--[if lt IE 9]>
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+				<![endif]-->
+				<link rel="stylesheet" href="../src/font-awesome-4.7.0/css/font-awesome.min.css" />				
+				<script src="../src/jquery-3.4.1.min.js"></script>
+				<script src="../src/popper.min.js"></script>				
+				<script src="../src/bootstrap/js/bootstrap.min.js"></script>		
+				<link href="../style.css" rel="stylesheet" />				
+				
+
+				<link rel="icon" href="../src/Logo.ico" />
+		</head>				
+				
+				<body>
+				
+				
+				
+				<!-- Header -->
+				<header id="top">					
+					<div class="container-fluid ctfaLogo">
+				<div class="row">				
+					<div class="col-md-12">
+						<div class="myLogo ">						
+						<a href="../index.htm">						
+						<img src="../src/Logo.svg" alt="CTFA Logo">											
+						</a>
+						</div>						
+						<div class="floatText">						
+						<h2 class="display-4">						
+						<span class = "mainblue">						
+						<a href="../index.htm">						
+						CTF Academy
+						</a>						
+						</span>						
+						<br class="break">						
+						<span class = "headerDash">
+						- 
+						</span>						
+						<span class = "mainorange"> 
+						<a href="index.htm">
+						Web App Exploitation
+						</a>
+						</span>						
+						</h2>
+						</div>						
+						</div>
+						</div>						
+					  </div>					
+				</header>
+				
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark"  id="myNav">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+		<ul class="nav navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="../index.htm"><i class="fa fa-home homepageSize" aria-hidden="true"></i></a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="../crypto/index.htm">Cryptography</a>
+			</li>
+			
+			
+			
+			<li class="nav-item">
+				<a class="nav-link" href="../osint/index.htm">Open-Source Intel</a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="../web/index.htm">Web App Exploitation</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="../network/index.htm">Network Forensics</a>
+			</li>								
+		</ul>
+    </div>
+  </div>
+</nav>
+
+							
+<!-- Main container -->
+<div class="container-fluid" >
+
+<div id="myBody">
+  <div class="row">						
+
+<!-- Column Navigation -->
+<div class="col-md-3 order-2 order-md-1" >
+
+<div class="list-group-flush myLightBox mb-4">
+  <div class="list-group-item contents" >Table of Contents</div>
+    <a href="index.htm#WebAppExploitation" class="list-group-item list-group-item-action">1. Web App Exploitation</a>
+
+  <a href="index.htm#html" class="list-group-item list-group-item-action lvl2">1.1 HTML</a>
+  <a href="index.htm#css" class="list-group-item list-group-item-action lvl2">1.2 CSS</a>
+
+    <a href="index.htm#javascript" class="list-group-item list-group-item-action lvl2">1.3 JavaScript</a>
+	
+  <a href="index.htm#database" class="list-group-item list-group-item-action lvl2">1.4 Databases</a>
+  
+  <a href="index.htm#SecurityVulnerabilities" class="list-group-item list-group-item-action">2. Security Vulnerabilities</a>
+  
+    <a href="index.htm#HTMLVulnerabilities" class="list-group-item list-group-item-action lvl2">2.1 HTML Vulnerabilities</a>
+  <a href="index.htm#CSSVulnerabilities" class="list-group-item list-group-item-action lvl2">2.2 CSS Vulnerabilities</a>
+  <a href="index.htm#JavaScriptVulnerabilities" class="list-group-item list-group-item-action lvl2">2.3 JavaScript Vulnerabilities</a>
+    <a href="index.htm#DatabaseVulnerabilities" class="list-group-item list-group-item-action lvl2">2.4 Database Vulnerabilities</a>
+  <a href="index.htm#Summary" class="list-group-item list-group-item-action">3. Summary</a>
+  
+
+</div>
+
+
+
+
+<div class="list-group-flush myLightBox mb-3">
+
+  <div class="list-group-item contents" >Challenges</div>
+  <a href="challenge1/index.htm" class="list-group-item list-group-item-action">Challenge 1</a>
+  <a href="challenge2/index.htm" class="list-group-item list-group-item-action">Challenge 2</a>
+  <a href="challenge3/index.htm" class="list-group-item list-group-item-action">Challenge 3</a>
+
+</div>
+
+</div>
+
+<!-- End column -->						
+
+
+<!-- Main content -->
+		<div class="col-md-9 order-1 order-md-2" >
+				<div id="main">
+				
+				<ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a href="../index.htm">Home</a></li>
+				  <li class="breadcrumb-item active">Web App Exploitation</li>
+				</ol>				
+
+
+<noscript>
+				Please enable JavaScript on your web browser. For a tutorial, <a href="../other/enable_javascript.htm">click here</a>.				
+				</noscript>
+
+<h3 id="WebAppExploitation">1. Web App Exploitation</h3>
+<p>
+Web pages, just like the one you are reading now, are generally made of three components, HTML, CSS, and JavaScript. Each of these components has a different role in providing the formatting and functions of a webpage. The structure of a webpage can be compared to a human body: HTML is the bone structure, CSS is the appearance, and JavaScript is the muscles.
+</p>
+
+<h4 id="html">1.1 HTML</h4>
+<p>
+HTML is the backbone of a webpage; it gives the page its general structure. HTML stands for Hyper-Text Markup Language. HTML is used to determine how the webpage will be displayed. HTML “tags” are used to mark how the page should be structured. For example, this paragraph is marked with “p” tags, which tells the browser to show this text as a paragraph. HTML tags are enclosed in angle brackets (&lt; &gt;). Here is a sample of how a simple HTML page is structured:
+</p>
+
+<div class="htmlExample myLightBox py-4 px-1 my-3">
+<p>
+
+<span class="tag">&lt;</span><span class="tagname">!DOCTYPE html</span><span class="tag">&gt;</span>
+
+</p>
+
+<p class="htmllvl1">
+<span class="tag">&lt;</span><span class="tagname">html</span><span class="tag">&gt;</span>
+</p>
+
+<p class="htmllvl2">
+<span class="tag">&lt;</span><span class="tagname">body</span><span class="tag">&gt;</span>
+</p>
+
+<p class="htmllvl3">
+<span class="tag">&lt;</span><span class="tagname">h1</span><span class="tag">&gt;</span>Example Heading<span class="tag">&lt;</span><span class="tagname">/h1</span><span class="tag">&gt;</span>
+</p>
+
+<p class="htmllvl3">
+<span class="tag">&lt;</span><span class="tagname">p</span><span class="tag">&gt;</span>Example paragraph.<span class="tag">&lt;</span><span class="tagname">/p</span><span class="tag">&gt;</span>
+</p>
+
+<p class="htmllvl2">
+<span class="tag">&lt;</span><span class="tagname">/body</span><span class="tag">&gt;</span>
+</p>
+<p class="htmllvl1">
+<span class="tag">&lt;</span><span class="tagname">/html</span><span class="tag">&gt;</span>
+</p>
+</div>
+
+
+<p>
+You can view the HTML source of a webpage in most internet browsers. For Google Chrome, you can right-click the page and select “View Page Source” or use “Ctrl+U.” This will bring up the page’s HTML source code. Try right clicking on this page to test this out.
+</p>
+
+<div class="screenshot myLightBox my-3">
+		<img src="html.JPG" alt="HTML Example">
+</div>
+ 
+<h4  id="css">1.2 CSS</h4>
+<p>
+CSS determines the appearance of the webpage, much like a person’s hair or clothes can change their appearance. CSS stands for Cascading Style Sheet and is a style language used to change and customize the look of HTML pages. CSS can be either included in an HTML file, by using a special tag, or by including the CSS as a separate file, which is more common. If the CSS is included in a file, it will be linked in the page’s HTML source. It should look like this: EXAMPLE CSS LINK. See if you can view the CSS of this page.
+</p>
+
+<div class="screenshot myLightBox my-3">
+		<img src="css.JPG" alt="CSS Example">
+</div>
+
+<h4  id="javascript">1.3 JavaScript</h4>
+<p>
+JavaScript provides a webpage with much of its functionality, similar to how a person’s muscles allow them to move and function. JavaScript is a programming language used throughout the web to do just about anything from login functions to interactive games. Like CSS, JavaScript can be either included as a separate file or in the HTML file itself by using a special “&lt;script&gt;” tag.
+</p>
+
+
+<p>
+Here is an example of a simple JavaScript login form:
+</p>
+
+<div class = "mySignInBox myLightBox my-3">
+
+<form class="text-center">
+<div class = "mySignIn p-2">
+	
+    <p class="h4">Sign in</p>
+	
+</div>
+	
+<div class = "mySignInFields p-4 ">
+    <input type="text" id="username" class="form-control mb-4" placeholder="Username" required>
+    <input type="password" id="password" class="form-control mb-4" placeholder="Password" required>
+    <button class="btn btn-mybutton btn-block mb-2" id = "signin" type="button">Sign in</button>
+</div>
+</form>
+</div>
+
+<h4  id="database">1.4 Databases</h4>
+<p>
+In addition to these three main components of a webpage, databases can be used to provide additional functionality and information storage. To continue the analogy of a webpage being like a person, a database is akin to the human mind in that both store information for later access. Databases are usually separate from the webpage itself, but the two interact to store and retrieve data. The general structure of a database consists of “Columns,” Rows,” and “Tables.” A row consists of one or more columns. Rows are entries of data in the database, and a collection of rows and columns are contained in a table. There are many different types of databases; the type we will be focusing on is called SQL (pronounced “sequel”). SQL stands for Structured Query Language and is the most popular database language. SQL databases, much like other computer applications, use a programing language to receive commands. The main <a href="../other/glossary.htm#syntax" >syntax</a> statements to understand for this lesson are the “<b>SELECT</b>,” “<b>FROM</b>,” and “<b>WHERE</b>” statements. As their names suggest, the “<b>SELECT</b>” command tells the database to select or retrieve something from a table. The “<b>FROM</b>” statement tells the database which table to select from. Finally, the “<b>WHERE</b>” statement tells the database the condition in which to retrieve the specified information; if the “<b>WHERE</b>” statement is true, the database retrieves the requested information, if not the database retrieves nothing. These three statements can form a command such as “<b>SELECT row FROM table WHERE column value = ‘example value</b>’”. 
+</p>
+
+<p>
+The following is an example command to access data from a database that contains a “userTable” table, a “userEmails” row, and a “username” column: “<b>SELECT userEmails FROM userTable WHERE username = ‘jane</b>’” 
+</p>
+
+<p>
+This statement commands the database to retrieve the emails from the “userTable” for the username “jane.”
+</p>
+
+<h3 id="SecurityVulnerabilities">2. Security Vulnerabilities</h3>
+<p>
+Now that we are familiar with the four main components of a web application, HTML, CSS, JavaScript, and Databases, we can begin to learn about the security concerns associated with each component. The first place a security assessor should start when evaluating the security of a web application is to familiarize yourself with the application and view the source code for the HTML, CSS, and JavaScript. Additionally, it is important to evaluate any interactions involving a database.
+</p>
+
+<h4  id="HTMLVulnerabilities">2.1 HTML Vulnerabilities</h4>
+<p>
+There are a few things to consider when assessing the security of HTML. The number one thing to look for is code comments left by the page developer. Sometimes web programmers will write notes to themselves as comments in the web page’s code. These comments can provide a great deal of information about the webpage, such as incomplete parts of a page that may be vulnerable or usernames and passwords of the developer.
+</p>
+
+<h4  id="CSSVulnerabilities">2.2 CSS Vulnerabilities</h4>
+<p>
+CSS poses very few security concerns because it merely adds style to a webpage. On occasions CSS files may disclose information about the developer, such as an email address; however, most information that would be contained in a CSS file comment is likely accessible elsewhere.
+</p>
+
+<h4  id="JavaScriptVulnerabilities">2.3 JavaScript Vulnerabilities</h4>
+<p>
+Of the three main elements of a webpage, JavaScript poses the most significant security risk. Because JavaScript is used to give a webpage function, it can sometimes be misused or altered by a malicious user to perform an unauthorized action. Additionally, JavaScript functions are used for form validation; meaning that a JavaScript function is used to process a login or limit input into a form. Therefore, a security specialist should check for insecure JavaScript functions when assessing a webpage or application. Sometimes, in simple JavaScript login forms, the username and password are written in <a href="../other/glossary.htm#plaintext" >plaintext</a> in the function; be sure to check any login forms for such <a href="../other/glossary.htm#clientside" >client-side processing</a>.
+</p>
+
+<h4  id="DatabaseVulnerabilities">2.4 Database Vulnerabilities</h4>
+<p>
+Databases on their own do not pose much of a security risk; it is when databases are connected to and used with webpages and web applications that security risks arise. In the above section we looked at a simple SQL statement to retrieve emails from a database: “<b>SELECT userEmails FROM userTable WHERE username = ‘jane</b>’”. This statement would work fine for retrieving emails from a database; however, if a user was able to fully control the input to the username field, then a malicious user could retrieve every users’ emails. This type of attack is called SQL Injection. For example, if a webpage has a form asking the user to enter his or her name to retrieve his or her emails and does not <a href="../other/glossary.htm#sanitize" >sanitize</a> the input, then a malicious user could send a malicious command to the database. The malicious user could enter the statement, “<b>jane’ OR ‘1’=’1</b>”, in the username field and retrieve every user’s emails. The resulting command would look like this: 
+“<b>SELECT userEmails FROM userTable WHERE username = ‘jane’ OR ‘1’=’1’</b>” 
+</p>
+
+<p>
+Because “<b>‘1’=’1’</b>” is always true, the “<b>WHERE</b>” statement would always be true, and the database would retrieve every row in the user table. 
+</p>
+
+<p>
+Also, SQL Injection can be used to bypass login authentication. For example, if a login page uses a database to store user passwords, a SQL command such as “<b>SELECT user FROM userPasswords WHERE password = ‘userInput’</b>” could be used to retrieve a user’s password if it is in the database. However, much like the example above, a malicious user could enter a password like “<b>x’ OR ‘1’=’1’</b>”. Doing so would result in a command like “<b>SELECT password FROM userPasswords WHERE password = ‘x’ OR ‘1’=’1’</b>" where again, “<b>‘1’=’1</b>” is always true and would allow the user to login even though he or she does not know the password.
+</p>
+
+<h3 id="Summary">3. Summary</h3>
+<p>
+Since these four elements work together to form a webpage, they must be assessed together, as well as individually. Many webpages have HTML text boxes which allow users to enter text that is then processed by JavaScript and printed back into the HTML or stored in a database. If the user input is not handled properly, a malicious user could enter a carefully crafted input and compromise the security of the web application. A webpage may have an HTML form for user login where the username and password are sent to a database for processing. If the input is not sanitized properly, a malicious user could gain unauthorized access to the application. A cybersecurity analyst should always check input boxes for such vulnerabilities.
+</p>
+
+
+			
+			<div id="backToTop" class="my-3">
+<a href="#top">Back to Top</a>
+<!-- Takes user to top of home page -->								
+</div>
+
+
+<ul class="pagination justify-content-center">
+  <li class="page-item">
+      <a class="page-link disabled" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+	
+  <li class="page-item active"><a class="page-link" href="index.htm">1</a></li>
+  <li class="page-item"><a class="page-link" href="challenge1/index.htm">2</a></li>
+  <li class="page-item"><a class="page-link" href="challenge1/answer.htm">3</a></li>
+  <li class="page-item"><a class="page-link" href="challenge2/index.htm">4</a></li>
+  <li class="page-item"><a class="page-link" href="challenge2/answer.htm">5</a></li>
+  <li class="page-item"><a class="page-link" href="challenge3/index.htm">6</a></li>
+  <li class="page-item"><a class="page-link" href="challenge3/answer.htm">7</a></li>
+    
+   <li class="page-item">
+      <a class="page-link" href="challenge1/index.htm" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+</ul>
+
+
+</div>
+<!-- Main End --> </div>
+</div>
+</div>
+</div>
+<!-- Main Container End --> 
+				
+<!-- Footer -->
+<footer class="mt-3">
+    
+    <div class="container-fluid">
+      <div class="row threeColumns mt-2">
+	  
+	  <!-- Footer Column 1 -->
+	<div class="col-md-4 order-2 order-md-1 leftInfo">	
+	<div class="infoLinks">
+		<a href="../other/contact_us.htm" >Contact Us</a>
+		<a href="../other/glossary.htm" >Glossary</a>
+		<a href="../other/quick_start.htm" >Quick Start Guide</a>
+		<a href="../other/legal_disclaimer.htm" >Legal Disclaimer</a>
+	</div>
+	</div>
+  <!-- Footer Column 2 -->
+      <div class="col-md-4 py-4 order-1 order-md-2">
+        <div class="flex-center socialButtons">
+          <!-- Email -->		  
+		  <a href="mailto:cybertrainingforceacademy@gmail.com" >		  
+		  <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+		  </a>		  
+		<!-- Facebook -->
+			<a href="https://www.facebook.com/CTF-Academy-2271850929563454" target="_blank">
+		  <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+		  </a>
+          <!-- Twitter -->
+          <a href="https://twitter.com/CTFAcademy" target="_blank">
+            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+          </a>
+		  <!-- YouTube-->
+          <a href="https://www.youtube.com/channel/UC2YnTDWba8lqC-x77h8id8w" target="_blank">
+            <i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i>
+          </a>         
+        </div>
+      </div>
+	  
+	  <!-- Footer Column 3 -->
+	  <div class="col-md-4 order-3 order-md-3 rightInfo">
+	<div class="infoLinks">
+<a href="../other/about_us.htm" >About Us</a> 
+  <a href="../other/about_us.htm#jacob">Jacob Corley</a>   
+	<a href="../other/about_us.htm#james">James Corley</a> 
+	<a href="../other/about_us.htm#john">John Reiman</a> 
+	</div>	
+	</div>	
+	</div>	  
+</div>
+ 
+    <!-- Footer Links -->
+    <div class="footer-copyright py-3">
+		&#169; 2019 Cyber Training Force Academy 		
+		<span class = "termsPolicy">
+		<a href="../other/terms-of-use.htm">Terms of Use</a> 		
+		|
+		<a href="../other/privacy-policy.htm">Privacy Policy</a>		
+		</span>
+    </div>
+  </footer>
+  <!-- Footer End -->
+</body>
+</html>

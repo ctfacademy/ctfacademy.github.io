@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>CTF Academy : Challenge 1</title>
+			<meta name="description" content="Attached is a screenshot from a recent interview with the Company CEO. We believe that the CEO’s email and password are located somewhere in the picture. Find it and enter the password here.">
+			
+			<meta name="author" content="CTF Academy">			
+			<link href="../../src/bootstrap/css/bootstrap.min.css" rel="stylesheet">	
+				<!--[if lt IE 9]>
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+				<![endif]-->
+				<link rel="stylesheet" href="../../src/font-awesome-4.7.0/css/font-awesome.min.css" />				
+				<script src="../../src/jquery-3.4.1.min.js"></script>
+				<script src="../../src/popper.min.js"></script>				
+				<script src="../../src/bootstrap/js/bootstrap.min.js"></script>		
+				<link href="../../style.css" rel="stylesheet" />				
+				<script src="../../src/jquery.md5.min.js"></script>
+				<script src="../../src/hashCheck.js"></script>
+				<script src="flagValidate.js"></script>
+
+<link rel="icon" href="../../src/Logo.ico" />				
+				</head>				
+				
+				<body>
+				
+								
+				
+				<!-- Header -->
+				<header id="top">					
+					<div class="container-fluid ctfaLogo">
+				<div class="row">				
+					<div class="col-md-12">
+						<div class="myLogo ">						
+						<a href="../../index.htm">						
+						<img src="../../src/Logo.svg" alt="CTFA Logo">											
+						</a>
+						</div>						
+						<div class="floatText">						
+						<h2 class="display-4">						
+						<span class = "mainblue">						
+						<a href="../../index.htm">						
+						CTF Academy
+						</a>						
+						</span>						
+						<br class="break">						
+						<span class = "headerDash">
+						- 
+						</span>						
+						<span class = "mainorange"> 
+						<a href="../index.htm">
+						Open Source Intelligence
+						</a>
+						</span>						
+						</h2>
+						</div>						
+						</div>
+						</div>						
+					  </div>					
+				</header>
+				
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark"  id="myNav">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+		<ul class="nav navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="../../index.htm"><i class="fa fa-home homepageSize" aria-hidden="true"></i></a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="../../crypto/index.htm">Cryptography</a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="../../osint/index.htm">Open-Source Intel</a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="../../web/index.htm">Web App Exploitation</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="../../log/index.htm">Network Forensics</a>
+			</li>								
+		</ul>
+    </div>
+  </div>
+</nav>
+
+							
+<!-- Main container -->
+<div class="container-fluid" >					
+
+
+<div id="myBody">
+  <div class="row">						
+
+<!-- Column Navigation -->
+<div class="col-md-3 order-2 order-md-1" >
+
+<div class="list-group-flush myLightBox mb-4">
+  <div class="list-group-item contents" >Table of Contents</div>
+    <a href="../index.htm#OpenSourceIntelligence" class="list-group-item list-group-item-action">1. Open Source Intelligence</a>
+
+  <a href="../index.htm#OSINTTechniques" class="list-group-item list-group-item-action lvl2">1.1 OSINT Techniques</a>
+
+  
+  <a href="../index.htm#OSINTAttackExample" class="list-group-item list-group-item-action lvl2">1.2 OSINT Attack Example</a>
+
+  <a href="../index.htm#OSINTDefensiveTechniques" class="list-group-item list-group-item-action">2. OSINT Defensive Techniques</a>
+  
+</div>
+
+<div class="list-group-flush myLightBox mb-3">
+
+  <div class="list-group-item contents" >Challenges</div>
+  <a href="../challenge1/index.htm" class="list-group-item list-group-item-action">Challenge 1</a>
+  <a href="../challenge2/index.htm" class="list-group-item list-group-item-action">Challenge 2</a>
+
+</div>
+
+</div>
+
+<!-- End column -->						
+
+
+<!-- Main content -->
+		<div class="col-md-9 order-1 order-md-2" >
+				<div id="main">
+				
+				<ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a href="../../index.htm">Home</a></li>
+				  <li class="breadcrumb-item"><a href="../index.htm">Open Source Intelligence</a></li>
+				  <li class="breadcrumb-item active">Challenge 1</li>
+				</ol>				
+
+
+<noscript>
+				Please enable JavaScript on your web browser. For a tutorial, <a href="../../other/enable_javascript.htm">click here</a>.				
+				</noscript>
+
+<h3>Challenge 1: Attention to Details</h3>
+
+<p>
+Attached is a screenshot from a recent interview with the Company CEO. We believe that the CEO’s email and password are located somewhere in the picture. Find his sign-in credentials and try to log in.
+</p>
+
+<div class = "mySignInBox myLightBox my-4">
+
+<form class="text-center">
+<div class = "mySignIn p-2">
+	
+    <p class="h4">Sign in</p>
+	
+</div>
+	
+<div class = "mySignInFields p-4">
+
+<div class="mb-3"> 
+    <input type="text" id="username" class="form-control mb-3" placeholder="Username" required>
+	
+    <input type="password" id="password" class="form-control mb-1" placeholder="Password" required>
+	
+	<span id="loginFeedback"></span>
+</div>
+    <button onclick="buttonFunction()" class="btn btn-mybutton btn-block mb-2" id = "signin" type="button">Sign in</button>
+</div>
+</form>
+</div>
+
+
+<div id="flagDiv">
+
+	<span id="successFlag"></span>
+
+</div>
+
+<p>
+<b>Question 1:</b> How many letters is the encoded message shifted?
+</p>
+
+<!-- Q1 input form -->
+<div class = "mySignInBox myLightBox my-4">
+<form class="text-center" novalidate>
+<div class = "mySignIn p-2">
+    <p class="h4">Question 1</p>	
+</div>	
+<div class = "mySignInFields p-4">	
+	<div class="mb-3">    
+    <input type="text" id="flag1" class="form-control">	
+	<span id="flagFeedback1"></span>
+	</div>
+	
+    <!-- Submit button -->
+    <button onclick="q1()" class="btn btn-mybutton btn-block mb-2" id = "submit1" type="button">Submit</button>
+
+    </div>
+</form>
+</div>
+<!-- Flag form End -->
+
+
+<p>
+<b>Challenge 1:</b> Find the flag and input the answer.
+</p>
+
+<!-- Flag input form -->
+<div class = "mySignInBox myLightBox my-4">
+<form class="text-center" novalidate>
+<div class = "mySignIn p-2">
+    <p class="h4">Input Flag</p>	
+</div>	
+<div class = "mySignInFields p-4">	
+	<div class="mb-3">    
+    <input type="text" id="flag" class="form-control">	
+	<span id="flagFeedback"></span>
+	</div>
+	
+    <!-- Submit button -->
+    <button onclick="myFlag()" class="btn btn-mybutton btn-block mb-2" id = "submit" type="button">Submit</button>
+
+    </div>
+</form>
+</div>
+<!-- Flag form End -->
+
+
+			
+			<div id="backToTop" class="my-3">
+<a href="#top">Back to Top</a>
+<!-- Takes user to top of home page -->								
+</div>
+
+<ul class="pagination justify-content-center">
+  <li class="page-item">
+      <a class="page-link disabled" href="../index.htm" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+	
+  <li class="page-item "><a class="page-link" href="../index.htm">1</a></li>
+  <li class="page-item active"><a class="page-link" href="index.htm">2</a></li>
+  <li class="page-item"><a class="page-link" href="answer.htm">3</a></li>
+  <li class="page-item"><a class="page-link" href="../challenge2/index.htm">4</a></li>
+  <li class="page-item"><a class="page-link" href="../challenge2/answer.htm">5</a></li>
+    
+   <li class="page-item">
+      <a class="page-link" href="answer.htm" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+</ul>
+
+</div>
+<!-- Main End --> </div>
+</div>
+</div>
+</div>
+<!-- Main Cotainer End --> 
+				
+<!-- Footer -->
+<footer class="mt-3">
+    
+    <div class="container-fluid">
+      <div class="row threeColumns mt-2">
+	  
+	  <!-- Footer Column 1 -->
+	<div class="col-md-4 order-2 order-md-1 leftInfo">	
+	<div class="infoLinks">
+		<a href="../../other/contact_us.htm" >Contact Us</a>
+		<a href="../../other/glossary.htm" >Glossary</a>
+		<a href="../../other/quick_start.htm" >Quick Start Guide</a>	
+		<a href="../../other/legal_disclaimer.htm" >Legal Disclaimer</a>
+	</div>
+	</div>
+  <!-- Footer Column 2 -->
+      <div class="col-md-4 py-4 order-1 order-md-2">
+        <div class="flex-center socialButtons">
+          <!-- Email -->		  
+		  <a href="mailto:cybertrainingforceacademy@gmail.com" >		  
+		  <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+		  </a>		  
+		<!-- Facebook -->
+			<a href="https://www.facebook.com/CTF-Academy-2271850929563454" target="_blank">
+		  <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+		  </a>
+          <!-- Twitter -->
+          <a href="https://twitter.com/CTFAcademy" target="_blank">
+            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+          </a>
+		  <!-- YouTube-->
+          <a href="https://www.youtube.com/channel/UC2YnTDWba8lqC-x77h8id8w" target="_blank">
+            <i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i>
+          </a>         
+        </div>
+      </div>
+	  
+	  <!-- Footer Column 3 -->
+	  <div class="col-md-4 order-3 order-md-3 rightInfo">
+	<div class="infoLinks">
+<a href="../../other/about_us.htm" >About Us</a> 
+  <a href="../../other/about_us.htm#jacob">Jacob Corley</a>   
+	<a href="../../other/about_us.htm#james">James Corley</a> 
+	<a href="../../other/about_us.htm#john">John Reiman</a> 
+	</div>	
+	</div>	
+	</div>	  
+</div>
+ 
+    <!-- Footer Links -->
+    <div class="footer-copyright py-3">
+		&#169; 2019 Cyber Training Force Academy 		
+		<span class = "termsPolicy">
+		<a href="../../other/terms-of-use.htm">Terms of Use</a> 		
+		|
+		<a href="../../other/privacy-policy.htm">Privacy Policy</a>		
+		</span>
+    </div>
+  </footer>
+  <!-- Footer End -->
+</body>
+</html>
