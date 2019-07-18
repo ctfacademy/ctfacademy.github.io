@@ -48,6 +48,8 @@ var myalert = "637466617b73657175656c7d";
 	var admin = "admin";
 	
  var myString = hex2a(myalert);
+ 
+if (sql !== "") {
 	
 if (username == admin) {
 	
@@ -90,7 +92,7 @@ if (username == admin) {
    }
 }
 
-
+}
 
 else {
 	
